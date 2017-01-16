@@ -33,7 +33,7 @@ private:
 	float CloseAngle = 89.9f;
 		
 	UPROPERTY(EditAnywhere)
-	ATriggerVolume* PressurePlate;
+	ATriggerVolume* PressurePlate = nullptr;
 
 	UPROPERTY(EditAnywhere)
 	float DoorCloseDelay = 1.f;
@@ -42,6 +42,6 @@ private:
 
 	float GetTotalMassOfActorsOnPlate();
 
-	AActor* ActorThatOpens;
-	AActor* Owner;
+	AActor* ActorThatOpens = nullptr;
+	AActor* Owner = nullptr;
 };
